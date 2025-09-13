@@ -15,11 +15,14 @@ wht='\e[1;37m' #White
 #transblu='\e[38;2;91;206;250m'
 #transpnk='\e[38;2;245;169;184m'
 #transwht='\e[38;2;255;255;255m'
+
 #Set color to white for start
+echo -e "${wht}"
+
+
 text='\e[38;2;204;0;107m'
 border='\e[0;37m'
 
-echo -e "${wht}"
 echo -e "${red}ME??? lemme just..."
 echo -e "${border}###########################"
 trans='\e[38;2;245;169;184m'
@@ -33,8 +36,8 @@ echo -e "${border}#${trans}###${text}#${trans}####${text}#${trans}#${text}#${tra
 trans='\e[38;2;91;206;250m'
 echo -e "${border}#${trans}####${text}####${trans}##${text}#${trans}#${text}#${trans}###${text}#${trans}#${text}####${trans}###${border}#"
 echo -e "${border}###########################"
-echo -e "${pur}Trump is a fascist"
-echo
+
+echo -e "${wht}"
 text='\e[48;2;90;24;154m'
 echo -e "${red}ME??? lemme just..."
 echo -e "${border}###########################"
@@ -50,8 +53,7 @@ trans='\e[48;2;163;2;98m'
 echo -e "${border}#${trans}####${text}####${trans}##${text}#${trans}#${text}#${trans}###${text}#${trans}#${text}####${trans}###${border}#"
 echo -e "${border}###########################"
 
-
-echo
+echo -e "${wht}"
 echo -e "${nc} ######################"
 echo -e "${blk} ######################"
 echo -e "${gry} ######################"
@@ -62,4 +64,5 @@ echo -e "${blu} ######################"
 echo -e "${pur} ######################"
 echo -e "${cyn} ######################"
 echo -e "${wht} ######################"
+
 echo -e "${wht}"
