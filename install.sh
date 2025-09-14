@@ -13,6 +13,19 @@ cyn='\e[0;36m' # Cyan
 wht='\e[0;37m' # White
 echo -e "${white}"
 
+### Keymap selection ###
+echo "Available keymaps:" # There are more keymaps, but these are the most common
+echo "US, DE, FR, ES, IT, RU, JP"
+Keymaps=("us" "de" "fr" "es" "it" "ru" "jp")
+for i in "${!Keymaps[@]}"; do
+    echo "[$i] ${Keymaps[$i]}"
+done
+
+read -p "Select keymap: " keymap
+loadkeys $keymap
+echo -e "${grn}Keymap set to $keymap${wht}"
+
+
 ### Platformsize confirmation ###
 echo "Checking platformsize"
 platformsize=$(cat /sys/firmware/efi/fw_platform_size)
